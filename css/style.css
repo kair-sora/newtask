@@ -1,0 +1,118 @@
+
+
+  body{
+    background: 
+      linear-gradient(
+        hsl(200, 50%, 80%) 0%, 
+        hsl(200, 30%, 95%) 75%);
+      background-attachment: fixed;
+      height: 100vh;
+  }
+  
+.home{
+  position: absolute;
+}
+
+.kamihikouki{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1000;
+}
+
+  .planePath {
+    stroke:hsl(200, 50%, 80%) 0%, 
+        hsl(200, 30%, 95%) 75%;
+    stroke-width: .1%;
+    stroke-width: .5%;
+    stroke-dasharray: 1% 2%;
+    stroke-linecap: round;
+    fill: none;
+  }
+  
+  .fil1 {
+    fill: #ffffff;
+  }
+  
+  .fil2 {
+    fill: #C5C6C6;
+  }
+  
+  .fil4 {
+    fill: #9D9E9E;
+  }
+  
+  .fil3 {
+    fill: #AEAFB0;
+  }
+
+  .home {
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: url(https://jackrugile.com/images/misc/skyline-texture.png);
+  }
+
+  .sketch {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000; /* Adjust this value as needed */
+    pointer-events: none;
+  }
+
+
+  .parallax {
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    height: 100vh; /* 一番下から出すようにする */
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    /* 建物を奥側にする */
+    position: relative;
+    z-index: 2000; /* Adjust this value as needed */
+  }
+  
+  .parallax-group {
+    height: 33vh;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  .layer2 {
+    transform: translateZ(180px);
+
+  }
+  .layer1 {
+    transform: translateZ(90px);
+  }
+  .layer0 {
+    transform: translateZ(0);
+  }
+  .layer-1 {
+    transform: translateZ(-90px);
+  }
+  .layer-2 {
+    transform: translateZ(-180px);
+  }
+
+
+  span {
+    display: block;
+  }
+
+  
